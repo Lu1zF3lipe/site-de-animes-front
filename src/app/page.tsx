@@ -1,7 +1,34 @@
 /* eslint-disable @next/next/no-img-element */
 import { Search, Bookmark, UserCircle2, X} from "lucide-react";
 import Image from "next/image";
-import { Carrusel } from "./componentes/Carrusel/Index";
+import { Carrusel } from "./componentes/Carrusel/subcomponents/Index";
+
+const animes = [
+  {
+    name: "Black clover",
+    image: "/icons/blackclover.jpg"
+  },
+  {
+    name: "É Sério Que Eu Sou o Mais Forte",
+    image: "/icons/ÉSérioQueEuSouoMaisForte.jpg"
+  },
+  {
+    name: "Laughing Under the Clouds",
+    image: "/icons/LaughingUndertheClouds.jpg"
+  },
+  {
+    name: "My Unique Skill",
+    image: "/icons/MyUniqueSkill.jpg"
+  },
+  {
+    name: "Malevolent Spirits: Mononogatari",
+    image: "/icons/MalevolentSpiritsMononogatari.jpg"
+  },
+  {
+    name: "Yamada-kun and the even Witches",
+    image: "/icons/Yamada-kunandtheevenWitches.jpg"
+  }
+];
 
 export default function Home() {
   return (
@@ -56,12 +83,9 @@ export default function Home() {
             <Carrusel.Body>
               <Carrusel.Title title="Lamçamentos"/>
               <Carrusel.Content>
-                <Carrusel.Anime text="Black clover" src="/icons/blackclover.jpg"/>
-                <Carrusel.Anime text="É Sério Que Eu Sou o Mais Forte" src="/icons/ÉSérioQueEuSouoMaisForte.jpg"/>
-                <Carrusel.Anime text="Laughing Under the Clouds" src="/icons/LaughingUndertheClouds.jpg"/>
-                <Carrusel.Anime text="My Unique Skill" src="/icons/MyUniqueSkill.jpg"/>
-                <Carrusel.Anime text="Malevolent Spirits: Mononogatari" src="/icons/MalevolentSpiritsMononogatari.jpg"/>
-                <Carrusel.Anime text="Yamada-kun and the even Witches" src="/icons/Yamada-kunandtheevenWitches.jpg"/>
+                {animes.map(anime => (
+                  <Carrusel.Anime text={anime.name} src={anime.image}/>  
+                ))}
               </Carrusel.Content>
             </Carrusel.Body>
             <Carrusel.Button>
