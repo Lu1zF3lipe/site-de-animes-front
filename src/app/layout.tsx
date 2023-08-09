@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import './globals.css'
 import type { Metadata } from 'next'
 
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-zinc-800 text-zinc-100">{children}</body>
+      <body className="bg-zinc-800 ">{children}</body>
     </html>
   )
 }
