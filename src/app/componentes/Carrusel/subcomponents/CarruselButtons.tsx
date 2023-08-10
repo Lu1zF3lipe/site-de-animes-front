@@ -1,13 +1,9 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 interface CarruselButtonProps {
-	children: ReactNode
+  children: ReactNode;
 }
 
 export function CarruselButtons({ children }: CarruselButtonProps) {
-	return (
-		<div className="mt-28 flex">
-			{children}
-		</div>
-	)
+  return <div className="mt-28 flex">{children}</div>;
 }

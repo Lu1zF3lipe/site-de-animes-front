@@ -1,15 +1,9 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 interface CarruselRootProps {
-	children: ReactNode
+  children: ReactNode;
 }
 
 export function CarruselRoot({ children }: CarruselRootProps) {
-  return (
-    <div className="flex flex-row-reverse justify-center">
-      {children}
-    </div>
-  )
+  return <div className="flex flex-row justify-center">{children}</div>;
 }
-
-

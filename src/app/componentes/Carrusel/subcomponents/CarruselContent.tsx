@@ -1,14 +1,9 @@
-import { ReactNode } from "react"
-import { Carrusel } from "./Index"
+import { ReactNode } from "react";
 
 interface CarruselContentProps {
-	children: ReactNode
+  children: ReactNode;
 }
 
 export function CarruselContent({ children }: CarruselContentProps) {
-  return (
-      <div className="w-full flex flex-row mt-6 gap-3 ">
-        {children}
-      </div>
-  )
+  return <div className="w-full flex flex-row mt-6 gap-3 ">{children}</div>;
 }

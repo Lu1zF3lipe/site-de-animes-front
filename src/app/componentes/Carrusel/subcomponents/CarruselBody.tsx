@@ -1,13 +1,9 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 interface CarruselBodyProps {
-	children: ReactNode
+  children: ReactNode;
 }
 
 export function CarruselBody({ children }: CarruselBodyProps) {
-  return (
-    <div className="flex flex-col items-center  w-3/5">
-      {children}
-    </div>
-  )
+  return <div className="flex flex-col items-center  w-3/5">{children}</div>;
 }
