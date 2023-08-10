@@ -1,4 +1,4 @@
-import { Carrusel as CarruselComponets } from "./subcomponents/Index";
+import { Carrusel as CarruselComponets } from "./subComponentsCarrusel/index";
 
 interface animesProps {
   animes: {

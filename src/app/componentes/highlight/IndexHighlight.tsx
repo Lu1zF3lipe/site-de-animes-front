@@ -1,5 +1,4 @@
-import { Highlight as HighlightComponents } from "./subComponents/Index";
-
+import { Highlight as HighlightComponents } from "./subComponentsHighLight/index";
 interface HighlightContentProps {
   HighlightContent: {
     name: string;
